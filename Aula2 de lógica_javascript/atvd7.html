@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let quantidade_macas = prompt("Quantidade de maças:")
+
+        if(quantidade_macas < 12 && quantidade_macas > 0){
+            let preco_total = (quantidade_macas * 3.50).toFixed(2)
+            document.write("O valor total da compra deu R$" + preco_total)
+        }else if(quantidade_macas <= 0){
+            document.write("Valor inválido")
+        }else{
+            let preco_total = (quantidade_macas * 2.50).toFixed(2)
+            document.write("O valor total da compra deu R$" + preco_total)
+        }
+
+    </script>
+</body>
+</html>

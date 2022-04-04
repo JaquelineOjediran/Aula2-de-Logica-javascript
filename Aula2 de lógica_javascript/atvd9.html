@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num1 = parseInt(prompt("Digite o primeiro número:"))
+        let num2 = parseInt(prompt("Digite o segundo número:"))
+        let opcao = prompt("Qual das seguintes operações deseja realizar: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação")
+
+        switch(opcao){
+            case "1":
+                let soma = num1 + num2
+                document.write("O resultado da operação é " + soma)
+            break
+
+            case "2":
+                let subtracao = num1 - num2
+                document.write("O resultado da operação é " + subtracao)
+            break
+
+            case "3":
+                let divisao = num1 / num2
+                document.write("O resultado da operação é " + divisao)
+            break
+
+            case "4":
+                let multiplicacao = num1 * num2
+                document.write("O resultado da operação é " + multiplicacao)
+            break
+
+            default:
+                document.write("Operação inválida")
+        }
+
+    </script>
+</body>
+</html>
